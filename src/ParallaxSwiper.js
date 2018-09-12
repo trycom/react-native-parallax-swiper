@@ -44,7 +44,7 @@ class ParallaxSwiper extends Component {
     this.setState({ width, height });
   };
 
-  scrollToIndex(index, animated = true) {
+  scrollToIndex(index, animated = false) {
     const { vertical, dividerWidth, animatedValue } = this.props;
     const pageWidth = this.state.width + dividerWidth;
     const pageHeight = this.state.height;
